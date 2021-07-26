@@ -1,28 +1,34 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="text-center mt-5">
+      <router-link to="/episodes">
+      <Button :size="'small'" :label="'Episódios'" :primary="false"></Button>
+      </router-link>
+      <router-link to="/characters">
+      <Button :size="'small'" :label="'Personagens'" :primary="false"></Button>
+      </router-link>
+    </div>
+    <router-view class="fade-in"></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Button from "./components/Button/Button.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Button
+  },
+};
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.storybook-button {
+  margin-right: 10px;
 }
 </style>

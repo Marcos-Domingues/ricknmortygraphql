@@ -1,4 +1,4 @@
-# ricknmortytest
+# ricknmorty
 
 ## Project setup
 ```
