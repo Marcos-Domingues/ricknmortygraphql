@@ -4,6 +4,7 @@
       <router-link to="/episodes">
       <Button :size="'small'" :label="'Episódios'" :primary="false"></Button>
       </router-link>
+      asdasdasdada
       <router-link to="/characters">
       <Button :size="'small'" :label="'Personagens'" :primary="false"></Button>
       </router-link>

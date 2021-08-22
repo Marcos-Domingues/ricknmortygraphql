@@ -20,7 +20,25 @@
 </template>
 <script>
 export default {
-  props: ["name", "image", "txt1", "txt2"],
+  name: 'my-card',
+  props: {
+    name: {
+      type: String,
+      required: true
+    },
+    image: {
+      type: String,
+      required: true
+    },
+    txt1: {
+      type: String,
+      required: true
+    },
+    txt2: {
+      type: String,
+      required: false
+    }
+  }
 };
 </script>
 <style>
